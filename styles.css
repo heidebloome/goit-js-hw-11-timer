@@ -2,20 +2,16 @@ body {
   padding: 15px;
   padding-top: 30px;
   margin: 0;
+  height: 100vh;
 
   background: #000000;
   background-image: url("https://cdn.pixabay.com/photo/2021/10/06/08/34/halloween-6685071_960_720.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 
   font-family: "Irish Grover", cursive;
   text-align: center;
   color: #fff;
-}
-
-@media screen and (min-width: 960px) {
-  body {
-    background-size: cover;
-  }
 }
 
 @media screen and (min-width: 1200px) {

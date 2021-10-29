@@ -1,32 +1,66 @@
 body {
-  font-family: "Irish Grover", cursive;
-  text-align: center;
-  padding: 80px;
+  padding: 15px;
+  padding-top: 30px;
+  margin: 0;
 
   background: #000000;
   background-image: url("https://cdn.pixabay.com/photo/2021/10/06/08/34/halloween-6685071_960_720.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
 
+  font-family: "Irish Grover", cursive;
+  text-align: center;
   color: #fff;
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 80px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 p {
   margin: 0;
-  font-size: 60px;
+  font-size: 25px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 60px;
+  }
 }
 
 .timer {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  max-width: 100%;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .field {
+    margin-right: 30px;
+  }
 }
 
 .field-last {
@@ -34,5 +68,11 @@ p {
 }
 
 .value {
-  font-size: 80px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .value {
+    font-size: 80px;
+  }
 }

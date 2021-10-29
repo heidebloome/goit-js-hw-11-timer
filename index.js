@@ -42,33 +42,33 @@ class CountdownTimer {
 
     function createMarkUp(selector, year) {
       return `<p>Halloween ${year} Countdown</p>
-    <div class="timer" id=${selector.slice(1)}>
-      <div class="field">
-        <span class="value" data-value="days">00</span>
-        <span class="label">Days</span>
-      </div>
+              <div class="timer" id=${selector.slice(1)}>
+                <div class="field">
+                  <span class="value" data-value="days">00</span>
+                  <span class="label">Days</span>
+                </div>
 
-      <div class="field"><span class="value">:</span></div>
+                <div class="field"><span class="value">:</span></div>
 
-      <div class="field">
-        <span class="value" data-value="hours">00</span>
-        <span class="label">Hours</span>
-      </div>
+                <div class="field">
+                  <span class="value" data-value="hours">00</span>
+                  <span class="label">Hours</span>
+                </div>
 
-      <div class="field"><span class="value">:</span></div>
+                <div class="field"><span class="value">:</span></div>
 
-      <div class="field">
-        <span class="value" data-value="mins">00</span>
-        <span class="label">Minutes</span>
-      </div>
+                <div class="field">
+                  <span class="value" data-value="mins">00</span>
+                  <span class="label">Minutes</span>
+                </div>
 
-      <div class="field"><span class="value">:</span></div>
+                <div class="field"><span class="value">:</span></div>
 
-      <div class="field field-last">
-        <span class="value" data-value="secs">00</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>`;
+                <div class="field field-last">
+                  <span class="value" data-value="secs">00</span>
+                  <span class="label">Seconds</span>
+                </div>
+              </div>`;
     }
 
     function setTextContent(time) {

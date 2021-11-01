@@ -6,6 +6,8 @@ class CountdownTimer {
     this.year = this.date.getFullYear();
     this.intervalId = null;
     this.time = 0;
+
+    this.start();
   }
 
   start() {
@@ -28,12 +30,6 @@ class CountdownTimer {
 
       if (this.time <= 0) {
         this.stop();
-
-        new CountdownTimer({
-          selector: "#timer",
-          targetDate: new Date("Oct 31, 2022"),
-        });
-
         return;
       }
 
@@ -91,12 +87,10 @@ class CountdownTimer {
 
   stop() {
     clearInterval(this.intervalId);
-    timerEl.innerHTML = "";
-    alert("Halloween is today!");
   }
 }
 
 new CountdownTimer({
   selector: "#timer",
-  targetDate: new Date("Oct 31, 2021"),
-}).start();
+  targetDate: new Date("Oct 31, 2022"),
+});

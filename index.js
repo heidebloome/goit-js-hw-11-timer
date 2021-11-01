@@ -30,6 +30,11 @@ class CountdownTimer {
 
       if (this.time <= 0) {
         this.stop();
+        wrapperDivEl.innerHTML = "";
+        new CountdownTimer({
+          selector: "#timer",
+          targetDate: new Date(`Oct 31, ${this.year + 1}`),
+        });
         return;
       }
 
@@ -92,5 +97,5 @@ class CountdownTimer {
 
 new CountdownTimer({
   selector: "#timer",
-  targetDate: new Date("Oct 31, 2022"),
+  targetDate: new Date("Oct 31, 2020"),
 });
